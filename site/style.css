@@ -1,0 +1,20 @@
+h1{
+    text-align: center;
+    background-color: black;
+    color: aliceblue;
+    border-bottom: 1px;
+}
+
+
+div{
+    display:block;
+}
+
+p{
+    background-color: aqua;
+    border: 1px;
+}
+
+.image{
+    text-align: center;
+}
