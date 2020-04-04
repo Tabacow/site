@@ -1,21 +1,40 @@
 h1{
     text-align: center;
-    background-color: black;
+    background-color:  #0000ff;
     color: aliceblue;
     border-bottom: 1px;
 }
-
+h2{
+    text-align: center;
+    
+}
 
 div{
     display:block;
 }
 
 p{
-    background-color: aqua;
-    text-align: center;
+
+    text-align: justify;
     border: 1px;
 }
 
 .image{
     text-align: center;
+}
+
+.sidenav {
+  width: 130px;
+  position: fixed;
+  z-index: 1;
+  top: 20px;
+  left: 10px;
+  background: #eee;
+  overflow-x: hidden;
+  padding: 8px 0;
+}
+.main {
+  margin-left: 140px; /* Same width as the sidebar + left position in px */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
 }
