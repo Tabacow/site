@@ -1,0 +1,187 @@
+body{
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: azure;
+}
+span{
+    display: block;
+}
+h1{
+    text-align: center;
+    background-color:  #0000ff;
+    color: aliceblue;
+    border-bottom: 1px;
+}
+h2{
+    text-align: center;
+    
+}
+
+
+p{
+    text-align: justify;
+    border: 1px;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: black;
+}
+
+.divimage{
+    margin: 2%;
+    text-align: center;
+
+}
+
+.image{
+    max-width: 100%;
+    height: auto;
+}
+
+.nav{
+    text-align: center;
+}
+
+.menu{
+    font-size: 2.5vw;
+}
+
+.main {
+  padding: 0px 10px;
+}
+
+.wrapper {
+  border: 5px solid rgb(86,98,110);
+  border-radius: 5px;
+  margin-bottom: 2em;
+}
+
+.multicol {
+  column-width: 250px;
+  column-gap: 20px;
+  padding: 10px;
+}
+.multicol p {
+  margin: 0 0 1em 0;
+}
+
+.video{
+    text-align: center;
+    margin: auto;
+}
+
+
+
+iframe{
+    margin: auto;
+    width: 400px;
+    height: 250px;
+}
+.coordtitle{
+    margin-top: 3%;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .coordtitle {
+      margin-top: 3%;
+      font-size: 20px;
+      text-align: center;
+  }
+}
+
+.coordenador{
+    border: 5px solid rgb(86,98,110);
+    border-radius: 5px;
+    width: 30%;
+    
+    padding: 1%;
+}
+
+@media screen and (max-width: 800px) {
+  .coordenador {
+    border: 5px solid rgb(86,98,110);
+    border-radius: 5px;
+    width: 80%;
+    text-align: center;
+    padding: 1%; 
+    margin: auto;
+  }
+}
+
+
+.coordphoto{
+    margin-left: 1%;
+    display: inline-block;
+}
+.coordname{
+    height: 80px;
+}
+div .button{
+    background-color: blue;
+    text-align: center;
+}
+div .button a{
+    text-align: center;
+    color:antiquewhite;
+}
+div .button a:hover{
+    text-align: center;
+    color:brown;
+}
+
+.coordtext{
+    display: inline-block;
+    margin-left: 5%;
+}
+
+.campus{
+    font-size: 20px;
+}
+
+
+    
+}
+.tableelement1{
+    background-color: beige;
+    text-align: left;
+}
+.tableelement2{
+    background-color: bisque;
+    text-align: left;
+}
+#diurno{
+    text-align: center;
+}
+
+.table{
+    border: 5px solid rgb(86,98,110);
+    border-radius: 5px;
+    width: 30%;
+  }
+
+@media screen and (max-width: 800px) {
+  .table {
+    border: 5px solid rgb(86,98,110);
+    border-radius: 5px;
+    width: 80%;
+    text-align: center; 
+    margin: auto;
+  }
+}
+
+.divcampus{
+    margin-top: 3%;
+}
+
+@media screen and (max-width: 800px) {
+  .divcampus {
+      margin-top: 3%;
+      font-size: 20px;
+      text-align: center;
+  }
+}
