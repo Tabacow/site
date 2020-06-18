@@ -1,0 +1,15 @@
+<form>
+    <div class="form-group">
+      <label for="exampleInputNome">Nome Curso</label>
+      <input type="email" class="form-control" id="exampleInputNome" #novoNomeCurso>
+    </div>
+    <div class="form-group">
+       <label for="exampleFormControlTextarea1">Descrição</label>
+       <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" #novoDescricaoCurso></textarea>
+    </div>
+    <div class="form-group">
+      <label for="FooterCard">Nota do Curso</label>
+      <textarea class="form-control" id="FooterCard" rows="3" #novoNotaCurso></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary" (click)="criarCurso(novoNomeCurso.value, novoDescricaoCurso.value, novoNotaCurso.value)">Criar</button>
+</form>
