@@ -1,0 +1,35 @@
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { PaginaIniComponent } from './pagina-ini/pagina-ini.component';
+import { PaginaSugComponent } from './pagina-sug/pagina-sug.component';
+import { PaginaProfComponent } from './pagina-prof/pagina-prof.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { FooterComponent } from './footer/footer.component';
+
+const appRoutes : Routes = [
+  {path: '', component: PaginaIniComponent},
+  {path: 'paginaProf', component: PaginaProfComponent},
+  {path: 'paginaSug', component: PaginaSugComponent}
+];
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    PaginaIniComponent,
+    PaginaSugComponent,
+    PaginaProfComponent,
+    NavbarComponent,
+    FooterComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    RouterModule.forRoot(appRoutes)
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
