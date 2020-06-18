@@ -1,0 +1,38 @@
+<body>
+    <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a routerLink="/">Página inicial</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Alunos</li>
+          </ol>
+    </nav>
+    <div class="container">
+        <form (ngSubmit)="enviar(Aluform.form.value)" #Aluform="ngForm">
+            <div class="form-row">
+                <div class="col">
+                      <label for="exampleFormControlInput1">Nome</label>
+                      <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Nome" ngModel name="nome">
+                </div>
+                <div class="col">
+                        <label for="exampleFormControlInput1">email</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com" ngModel name="email">
+                </div>
+                <div class="col">
+                    <label for="exampleFormControlInput1">idade</label>
+                    <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Idade" ngModel name="idade">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Curso</label>
+                    <select class="form-control" id="exampleFormControlSelect1" ngModel name="curso">
+                      <option *ngFor='let c of cursos'>{{c}}</option>
+                    </select>
+                  </div>
+            </div>
+            <div class="mt-2 mb-2 justify-content-end">
+                <button type="submit" class="btn btn-primary mb-2">Enviar</button>
+            </div>
+        </form>
+    </div>    
+</body>
+<div class="card-group">
+    <app-aluno-card *ngFor='let a of alunos' [aluno]='a'></app-aluno-card>
+</div>
